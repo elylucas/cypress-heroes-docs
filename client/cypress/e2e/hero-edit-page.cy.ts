@@ -45,7 +45,7 @@ describe('hero edit page', () => {
         cy.get('@heroCard')
           .find('[data-cy=name]')
           .should('contain', newHero.name + ' edited');
-        cy.get('@heroCard').find('[data-cy=price]').should('contain', '12');
+        cy.get('@heroCard').find('[data-cy=price]').should('contain', '12s');
         cy.get('@heroCard').find('[data-cy=fans]').should('contain', '34');
         cy.get('@heroCard').find('[data-cy=saves]').should('contain', '56');
         cy.get('@heroCard')
